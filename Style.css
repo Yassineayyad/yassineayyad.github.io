@@ -94,6 +94,7 @@ h1
 }
 #btn_rechercher
 {
+font-weight: bold;
 background: #0065FC;
 text-decoration: none;
 border-top-right-radius: 10px;
@@ -105,7 +106,8 @@ color: white;
 display: flex;
 text-align: center;
 float:right ;
-text-align: center;
+justify-content: center;
+align-items: center;
 }
 #icon_loupe
 {
@@ -231,6 +233,7 @@ h2
 }
 .cube_hebergment
 {
+    color: black;
     background-color:white ;
     padding: 1%;
     border-radius: 20px 20px ;
@@ -340,6 +343,7 @@ grâce à l'opérateur '~' et on les force en GRIS */
 
 .cube_populaire
 {
+    color: black;
     display: flex;
     flex-direction: wrap ;
     justify-content: space-around;
@@ -393,6 +397,7 @@ grâce à l'opérateur '~' et on les force en GRIS */
 
 .bloc
 {
+    width: 350px;
     box-shadow: black 0px 0px 7px;
     border-radius: 20px;
 }
@@ -403,6 +408,7 @@ grâce à l'opérateur '~' et on les force en GRIS */
     flex-direction: column;
     justify-content: space-between;
     height: 250px;
+    width: 350px;
     box-shadow: black 0px 0px 7px;
     border-radius: 20px;
 
@@ -424,7 +430,7 @@ h4
 .imgactivite1
 {
     background-image: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-    width: 350px;
+    width: auto;
     height: 90%;
     background-size: cover;
     background-position: top;
@@ -433,7 +439,7 @@ h4
 .imgactivite2
 {
     background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-    width: 300px;
+    width: auto;
     height: 90%;
     background-size: cover;
     background-position: center;
@@ -442,7 +448,7 @@ h4
 .imgactivite3
 {
     background-image: url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-    width: 300px;
+    width: auto;
     height: 90%;
     background-size: cover;
     background-position: center;
@@ -451,7 +457,7 @@ h4
 .imgactivite4
 {
     background-image: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-    width: 300px;
+    width: auto;
     height: 90%;
     background-size: cover;
     background-position: top;
@@ -460,7 +466,7 @@ h4
 .imgactivite5
 {
     background-image: url("images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-    width: 300px;
+    width: auto;
     height: 90%;
     background-size: cover;
     background-position: center;
@@ -469,7 +475,7 @@ h4
 .imgactivite6
 {
     background-image: url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-    width: 300px;
+    width: auto;
     height: 90%;
     background-size: cover;
     background-position: center;
@@ -570,10 +576,9 @@ footer
     .bloc
     {
         margin-right: 20px;
-        margin-top: ;
     }
 }
-@media screen and (max-width: 768px)
+@media  screen and (max-width: 768px)
 {
     /**header**/
     #hebergement
@@ -592,9 +597,100 @@ footer
     }
     #icon_loupe
     {
-        display:contents;
-        width: 100px;
-        border: #0065FC solid;
-        background:#0065FC;
+        color: white;
+        background-color: #0065FC;
+        border-radius: 10px;
+        display:inline;
+        cursor: pointer;
+        height: 33px;
+        width: 40px;
+        
+    
+    }
+    #txt_recherche
+    {
+        border: none;
+    }
+    #icon_recherche
+    {
+        border: none;
+    }
+    #recherche
+    {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    #description2
+    {
+        margin-top: 10px;
+    }
+    #filtre
+    {
+        display: flex;
+    }
+     h3 
+    {
+    display: table-header-group;    
+    }
+    .filtre1
+    {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .flex_around
+    {
+     flex-direction: column-reverse;
+    }
+    .Hebergement_marseille
+    {
+        margin-top: 10px;
+        width: 100%;
+        margin-left: 0px;
+        background:white ;
+    }
+    .part1
+    {
+        display: block;
+        background: white;
+    }
+    .part2
+    {
+        display: block;
+        background: white;
+    }
+    .activites_marseille
+    {
+        flex-direction: column;
+        align-content: space-around;
+    }
+    .double_bloc
+    {
+        width: 440px;
+        justify-content: center;
+
+    }
+    .bloc
+    {
+        width: 440px;
+        height: 250px;
+        margin-right: 0px;
+    }
+    .imgactivite1
+    {
+        width: auto;
+        height: 80%;
+
+    }
+    .imgactivite4
+    {
+        width: auto;
+        height: 80%;
+
+    }
+    footer
+    {
+        flex-direction: column;
+        margin: 0;
+        margin-top: 60px;
     }
 }
