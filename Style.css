@@ -9,15 +9,15 @@ a
 
 /** Header**/
 
-header
+
+#mobile
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: none;
 }
 nav
 {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
 }
@@ -40,7 +40,7 @@ nav
     padding: 1em 2em 0em 2em;
 
 }
-#hebergement:focus
+#hebergement:active
 {
     border-top: #0065FC solid;
 }
@@ -318,16 +318,16 @@ h2
 	color: #0065FC;
 }
 	/* A l'état :hover sur le parent '.rating',
-		 on force TOUTES les étoiles à passer en jaune. */
+		 on force TOUTES les étoiles à passer en bleu. 
 .rating:hover .fa-star {
             color: #0065FC;
         }
 /* Et si la souris survole une étoile en particulier,
 on sélectionne toutes les étoiles qui sont APRÈS celle-ci
-grâce à l'opérateur '~' et on les force en GRIS */
+grâce à l'opérateur '~' et on les force en GRIS 
          .rating .fa-star:hover ~ .fa-star {
-            color: gray;
-        }
+            color: gray; 
+        }*/
  
  .rating:hover,
  .rating:hover ~ a,
@@ -523,7 +523,7 @@ footer
 
 /**responsive**/
 
-@media screen and (max-width: 1230px) 
+@media screen and (max-width: 1230px)
 {
     .flex_around
     {
@@ -550,11 +550,13 @@ footer
         width: 100%;
         margin-bottom: 5em;
         margin-right: 0em;
+        width: 92%;
     }
     .populaire
     {
         width: 100%;
         margin-left: 0em;
+        width: 95%;
     }
     .cube_populaire
     {
@@ -581,11 +583,70 @@ footer
 @media  screen and (max-width: 768px)
 {
     /**header**/
+    header
+    {
+        display: block;
+    }
+    nav
+    {
+        flex-direction: column;
+    }
+    #bloc1
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #bloc2
+    {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    #hebergement:focus
+    {
+        border-top: none;
+        border-bottom: #0065FC solid;
+    }
+    #activites:focus
+    {
+        border-top: none;
+        border-bottom: #0065FC solid;
+
+    }
+    #hebergement:hover
+    {
+        border-bottom: #0065FC solid; 
+    }
+    #activites:hover
+    {
+        border-bottom: #0065FC solid; 
+    }
     #hebergement
     {
-        position:relative;
-        right: 269px ;
-        top: 50px ;
+        border-bottom: gray solid;
+        width: 50%;
+        padding-bottom: 13px;
+    }
+    #activites
+    {
+        border-bottom: none;
+        border-bottom: gray solid;
+        width: 50%;
+        padding-bottom: 13px;
+    }
+    #sinscrire
+    {
+        margin-top: 1.5em;
+    }
+    #destock
+    {
+        display: none;
+    }
+    #mobile
+    {
+        display: block;
     }
 
 
@@ -646,7 +707,9 @@ footer
         margin-top: 10px;
         width: 100%;
         margin-left: 0px;
+        margin-left: 0px;
         background:white ;
+        padding: 0;
     }
     .part1
     {
@@ -658,6 +721,7 @@ footer
         display: block;
         background: white;
     }
+
     .activites_marseille
     {
         flex-direction: column;
@@ -674,6 +738,7 @@ footer
         width: 440px;
         height: 250px;
         margin-right: 0px;
+        margin-bottom: 10px;
     }
     .imgactivite1
     {
