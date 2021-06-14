@@ -21,40 +21,41 @@ nav
     align-items: center;
     text-align: center;
 }
-#hebergement
+.hebergement
 {
     color: #0065FC;
     padding: 1em 2em 0em 2em;
 
 }
-#activites
+.activites
 {
     color: black;
     padding: 1em 2em 0em 2em;
 
 }
-#sinscrire
+
+.sinscrire
 {
     font-weight: bold;
     color: #0065FC;
     padding: 1em 2em 0em 2em;
 
 }
-#hebergement:active
+.hebergement:hover
 {
     border-top: #0065FC solid;
 }
-#activites:focus
+.activites:hover
 {
     border-top: #0065FC solid;
 }
-#sinscrire:focus
+.sinscrire:focus
 {
     border-top: #0065FC solid;
 }
 .logo
 {
-    margin: 1.5em 0em 0em 1em;
+    margin: 1.5em 0em 0em 3em;
 }
 /**Section 1 **/
 
@@ -62,12 +63,12 @@ h1
 {
     font-size: 24px;
     font-weight: bold;
-    margin: 25px 0px 0px 25px ;
+    margin: 25px 0px 0px 45px ;
 
 }
 .description1
 {
-    margin-left: 26px;
+    margin-left: 48px;
 
 }
 #recherche
@@ -75,7 +76,7 @@ h1
 {
     display: flex;
     flex-direction: row;
-    margin-left: 26px;
+    margin-left: 50px;
 
 
 }
@@ -132,7 +133,7 @@ align-items: center;
 {
     display: flex;
     text-align: center;
-    margin: 20px 0 0 20px;
+    margin: 20px 0 0 43px;
     padding-left: 8px;
     align-items: center;
 
@@ -172,7 +173,7 @@ align-items: center;
 }
 #description2
 {
-    margin-left: 26px;
+    margin-left: 44px;
 
 }
 
@@ -183,7 +184,7 @@ h2
 {
     padding-top: 15px;
 }
-.flex_around
+.flex-around
 {
     display: flex;
     margin: 1em;
@@ -511,7 +512,7 @@ footer
     background: #f2f2f2;
     margin-top: 60px;
     position: relative;
-    margin: 50px ;
+
 }
 .footer
 {
@@ -522,7 +523,7 @@ footer
 
 @media screen and (max-width: 1230px)
 {
-    .flex_around
+    .flex-around
     {
         flex-direction: column;
         justify-content: space-between;
@@ -577,7 +578,7 @@ footer
         margin-right: 20px;
     }
 }
-@media  screen and (max-width: 768px)
+@media screen and  (max-width: 768px)
 {
     /**header**/
     header
@@ -601,39 +602,39 @@ footer
         justify-content: space-around;
         width: 100%;
     }
-    #hebergement:focus
+    .hebergement:focus
     {
         border-top: none;
         border-bottom: #0065FC solid;
     }
-    #activites:focus
+    .activites:focus
     {
         border-top: none;
         border-bottom: #0065FC solid;
 
     }
-    #hebergement:hover
+    .hebergement:hover
     {
         border-bottom: #0065FC solid; 
     }
-    #activites:hover
+    .activites:hover
     {
         border-bottom: #0065FC solid; 
     }
-    #hebergement
+    .hebergement
     {
         border-bottom: gray solid;
         width: 50%;
         padding-bottom: 13px;
     }
-    #activites
+    .activites
     {
         border-bottom: none;
         border-bottom: gray solid;
         width: 50%;
         padding-bottom: 13px;
     }
-    #sinscrire
+    .sinscrire
     {
         margin-top: 1.5em;
     }
@@ -676,7 +677,7 @@ footer
     #recherche
     {
         justify-content: center;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
     #description2
     {
@@ -695,7 +696,7 @@ footer
         display: flex;
         justify-content: flex-start;
     }
-    .flex_around
+    .flex-around
     {
      flex-direction: column-reverse;
     }
@@ -752,7 +753,12 @@ footer
     footer
     {
         flex-direction: column;
-        margin: 0;
+        margin: auto;
         margin-top: 60px;
+        text-align: center;
+    }
+    .footer
+    {
+        margin-right: 0;
     }
 }
