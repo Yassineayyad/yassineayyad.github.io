@@ -616,10 +616,12 @@ footer
     .hebergement:hover
     {
         border-bottom: #0065FC solid; 
+        border-top:none;
     }
     .activites:hover
     {
-        border-bottom: #0065FC solid; 
+        border-bottom: #0065FC solid;
+        border-top:none; 
     }
     .hebergement
     {
@@ -761,4 +763,5 @@ footer
     {
         margin-right: 0;
     }
+    
 }
