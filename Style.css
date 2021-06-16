@@ -244,7 +244,7 @@ h2
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 10px ;
 }
 .part2
 {
@@ -373,7 +373,7 @@ grâce à l'opérateur '~' et on les force en GRIS
     padding: 1%;
     border-radius: 20px 20px ;
     width: auto;
-    height: auto;
+    height: 126px;
 
 }
 
@@ -417,7 +417,7 @@ grâce à l'opérateur '~' et on les force en GRIS
 .bloc
 {
     width: 350px;
-    box-shadow: black 0px 0px 7px;
+    box-shadow: rgba(163, 160, 160, 0.746) 0px 0px 7px;
     border-radius: 20px;
 }
 
@@ -428,7 +428,7 @@ grâce à l'opérateur '~' et on les force en GRIS
     justify-content: space-between;
     height: 250px;
     width: 350px;
-    box-shadow: black 0px 0px 7px;
+    box-shadow: rgba(163, 160, 160, 0.746) 0px 0px 7px;
     border-radius: 20px;
 
 
@@ -541,7 +541,7 @@ footer
 }
 
 /**responsive**/
-
+/**
 @media screen and (max-width: 1230px)
 {
     .flex-around
@@ -598,8 +598,8 @@ footer
     {
         margin-right: 20px;
     }
-}
-@media screen and  (max-width: 768px)
+}**/
+@media screen and  (max-width: 1230px)
 {
     /**header**/
     header
@@ -709,16 +709,31 @@ footer
     #filtre
     {
         display: flex;
+        flex-wrap: wrap;
+    }
+    .filtre1
+    {
+        margin-top: 0;
+    }
+    .filtre1:nth-child(1)
+    {
+        margin-left: 0;
     }
      h3 
     {
-    display: table-header-group;    
+    display: table-header-group; 
+    padding-right: 2em;   
     }
     .filtre1
     {
         display: flex;
         justify-content: flex-start;
     }
+    .cube_populaire
+    {
+        margin: 10px 0;
+    }
+
     .flex-around
     {
      flex-direction: column-reverse;
@@ -734,32 +749,47 @@ footer
     }
     .part1
     {
-        display: block;
+        display: flex;
+        flex-direction: column;
         background: white;
     }
+    .part1 a
+{
+    margin-bottom: 30px;
+    width: auto;
+    box-shadow: rgba(163, 160, 160, 0.746) 0px 0px 7px;
+}
     .part2
     {
-        display: block;
+        display: flex;
+        flex-direction: column;
         background: white;
     }
-
+    .part2 a
+    {
+        margin-bottom: 30px;
+        width: auto;
+        box-shadow: rgba(163, 160, 160, 0.746) 0px 0px 7px;
+    }
     .activites_marseille
     {
-        flex-direction: column;
-        align-content: space-around;
+        display: block;
+        height: auto;
+        width: auto;
     }
     .double_bloc
     {
-        width: 440px;
+        width: auto;
+        height: 367px;
         justify-content: center;
+        margin: 0 30px 55px 30px;
 
     }
     .bloc
     {
-        width: 440px;
-        height: 250px;
-        margin-right: 0px;
-        margin-bottom: 10px;
+        width: auto;
+        height: 367px;
+        margin: 0 30px 55px 30px;
     }
     .imgactivite1
     {
