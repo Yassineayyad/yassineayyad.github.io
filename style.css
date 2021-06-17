@@ -1,0 +1,832 @@
+*
+{
+    font-family: 'Raleway', sans-serif;
+}
+a
+{
+    text-decoration: none;
+}
+
+/** Header**/
+
+
+#mobile
+{
+    display: none;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.hebergement
+{
+    color: #0065FC;
+    padding: 1em 2em 0em 2em;
+
+}
+.activites
+{
+    color: black;
+    padding: 1em 2em 0em 2em;
+    font-weight: bolder;
+
+}
+
+.sinscrire
+{
+    font-weight: bold;
+    color: #0065FC;
+    padding: 1em 2em 0em 2em;
+
+}
+.hebergement:hover
+{
+    border-top: #0065FC solid;
+}
+.activites:hover
+{
+    border-top: #0065FC solid;
+}
+.sinscrire:focus
+{
+    border-top: #0065FC solid;
+}
+.logo
+{
+    margin-left: 20px;
+}
+/**Section 1 **/
+
+h1
+{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 25px 0px 0px 20px ;
+
+}
+.description1
+{
+    margin-left: 20px;
+
+}
+#recherche
+
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+
+
+}
+.recherche
+{
+    
+    margin-right: 0;
+    text-decoration: none;
+    height: 2em;
+    font-weight: bold;
+}
+#txt_recherche
+{
+    height: 27px;
+    width: 232px; 
+    border:none;
+    color: black;
+    text-decoration: black;
+    padding-left: 10px;
+    font-weight: bold;
+    
+}
+::placeholder
+{
+    color: black;
+}
+#btn_rechercher
+{
+font-weight: bold;
+background: #0065FC;
+text-decoration: none;
+border: none;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+height: 2.5em;
+width: 9em;
+cursor: pointer;
+color: white;
+display: flex;
+text-align: center;
+float:right ;
+justify-content: center;
+align-items: center;
+}
+#icon_loupe
+{
+    display: none;
+}
+#icon_recherche
+{
+    width: 33px ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: black;
+    background: #f2f2f2 ;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/**Filtre**/
+
+#filtre
+{
+    display: flex;
+    text-align: center;
+    margin: 20px 0 0px 20px;
+    padding-left: 8px;
+    align-items: center;
+}
+#element_filtre
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filtre1
+{
+    border: #F2F2F2 solid 2px;
+    margin: 3em 1em ;
+    padding-right: 2em;
+    border-radius: 50em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.filtre1:nth-child(1)
+{
+    margin-left: 4em;
+}
+.filtre1:hover
+{
+    text-decoration: line-through;
+}
+.filtre1 i
+{
+    
+    border-radius: 2em;
+    padding: 10px;
+    margin-right: 1em;
+    color:#0065FC ;
+    background-color: #DEEBFF;
+}
+#cercle
+{
+    border-color: gray;
+    color: white;
+    background-color: #0065FC;
+    border-radius: 100%;
+}
+#description2
+{
+    margin:0 0 30px 20px ;
+
+}
+
+/**Section2**/
+    
+    /**hebergment**/
+h2
+{
+    padding-top: 15px;
+}
+.flex-around
+{
+    display: flex;
+    margin: 1em;
+
+}
+.Hebergement_marseille
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 2;
+    height: 650px;
+    margin-right: 26px;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    padding: 30px;
+}
+.populaire
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    height: auto;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+}
+.title
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    
+}
+.title a
+{
+    color: black;
+    font-size: 25px;
+}
+.part1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px ;
+}
+.part2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.cube_hebergment
+{
+    color: black;
+    background-color:white ;
+    padding: 1%;
+    border-radius: 20px 20px ;
+    width: 30%;
+    height: auto;
+}
+.description2
+{
+    width: 90%;
+    padding-left: 13px;
+}
+.imghebergement1
+{
+    background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+.imghebergement2
+{
+    background-image: url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+.imghebergement3
+{
+    background-image: url("images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+.imghebergement4
+{
+    background-image: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+.imghebergement5
+{
+    background-image: url("images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+.imghebergement6
+{
+    background-image: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+.more
+{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    margin: 2em 0 3em 1em;
+}
+/* Par défaut, une étoile est en gris,
+   avec un padding et un curseur en forme de main. */
+   .fa-star {
+	color: gray;
+	cursor: pointer;
+
+}
+/* Si elle porte en plus la classe '.gold', elle sera en bleu. */
+.fa-star.gold {
+	color: #0065FC;
+}
+	/* A l'état :hover sur le parent '.rating',
+		 on force TOUTES les étoiles à passer en bleu. 
+.rating:hover .fa-star {
+            color: #0065FC;
+        }
+/* Et si la souris survole une étoile en particulier,
+on sélectionne toutes les étoiles qui sont APRÈS celle-ci
+grâce à l'opérateur '~' et on les force en GRIS 
+         .rating .fa-star:hover ~ .fa-star {
+            color: gray; 
+        }*/
+ 
+ .rating:hover,
+ .rating:hover ~ a,
+ .rating:focus,
+ .rating:focus ~ a		
+ {
+     color:#0065FC;
+     cursor: pointer;
+ }
+
+    /**les plus populaire**/
+
+
+.cube_populaire
+{
+    color: black;
+    display: flex;
+    flex-direction: wrap ;
+    justify-content: space-around;
+    background-color:white ;
+    padding: 1%;
+    border-radius: 20px 20px ;
+    width: auto;
+    height: 126px;
+
+}
+
+.imgpopulaire1
+{
+    background-image: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    width: 125px;
+    background-size: cover;
+    background-position: left;
+    border-radius: 15px 0px 0 15px;
+
+}
+.imgpopulaire2
+{
+    background-image: url("images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    width: 125px;
+    background-size: cover;
+    background-position: left;
+    border-radius: 15px 0px 0 15px;
+
+}
+.imgpopulaire3
+{
+    background-image: url("images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    width: 125px;
+    background-size: cover;
+    background-position: left;
+    border-radius: 15px 0px 0 15px;
+}
+/** activites marseille**/
+
+.activites_marseille
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 550px;
+    width: 100%;
+
+}
+
+.bloc
+{
+    width: 350px;
+    box-shadow: rgba(163, 160, 160, 0.746) 0px 0px 7px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.double_bloc
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    width: 350px;
+    box-shadow: rgba(163, 160, 160, 0.746) 0px 0px 7px;
+    border-radius: 20px;
+    margin-right: 20px;
+
+
+}
+.double_bloc:nth-child(2)
+{
+    margin-top: 50px;
+}
+h4
+{
+    padding-left: 15px;
+    margin: 10px 0px 10px ;
+}
+#activite
+{
+    margin-left: 20px;
+}
+.imgactivite1
+{
+    background-image: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    width: auto;
+    height: 90%;
+    background-size: cover;
+    background-position: top;
+    border-radius: 15px 15px 0 0;
+}
+.imgactivite2
+{
+    background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    width: auto;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+.imgactivite3
+{
+    background-image: url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    width: auto;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+.imgactivite4
+{
+    background-image: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    width: auto;
+    height: 90%;
+    background-size: cover;
+    background-position: top;
+    border-radius: 15px 15px 0 0;
+}
+.imgactivite5
+{
+    background-image: url("images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    width: auto;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+.imgactivite6
+{
+    background-image: url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    width: auto;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+/**Footer**/
+.liste
+{
+    display: flex;
+    flex-direction: column;
+}
+.liste li
+{
+    padding-top: 10px;
+}
+h6
+{
+    margin-bottom: 10px;
+    margin-left: 40px;
+    font-size: 15px;
+font-weight: bold;
+}
+
+.liste a
+{
+    text-decoration: none;
+    color:black;
+}
+.liste
+{
+    list-style-type: none;
+}
+footer
+{
+    display: flex;
+    background: #f2f2f2;
+    margin-top: 60px;
+    position: relative;
+
+}
+.footer
+{
+    margin-right: 20%;
+}
+
+/**responsive**/
+/**
+@media screen and (max-width: 1230px)
+{
+    .flex-around
+    {
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+    }
+    #filtre 
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0em;
+        margin-left: 27px;
+    }
+    .filtre1
+    {
+        flex-direction: row;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .Hebergement_marseille
+    {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 5em;
+        margin-right: 0em;
+        width: 92%;
+    }
+    .populaire
+    {
+        width: 100%;
+        margin-left: 0em;
+        width: 95%;
+    }
+    .cube_populaire
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .activites_marseille
+    {   
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .activites_marseille div
+    {
+        margin-bottom: 10px;
+    }
+    .bloc
+    {
+        margin-right: 20px;
+    }
+}**/
+@media screen and  (max-width: 1230px)
+{
+    /**header**/
+    header
+    {
+        display: block;
+    }
+    nav
+    {
+        flex-direction: column;
+    }
+    #bloc1
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #bloc2
+    {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .hebergement:focus
+    {
+        border-top: none;
+        border-bottom: #0065FC solid;
+    }
+    .activites:focus
+    {
+        border-top: none;
+        border-bottom: #0065FC solid;
+
+    }
+    .hebergement:hover
+    {
+        border-bottom: #0065FC solid; 
+        border-top:none;
+    }
+    .activites:hover
+    {
+        border-bottom: #0065FC solid;
+        border-top:none; 
+    }
+    .hebergement
+    {
+        border-bottom: gray solid;
+        width: 50%;
+        padding-bottom: 13px;
+    }
+    .activites
+    {
+        border-bottom: none;
+        border-bottom: gray solid;
+        width: 50%;
+        padding-bottom: 13px;
+    }
+    .sinscrire
+    {
+        margin-top: 1.5em;
+    }
+    #destock
+    {
+        display: none;
+    }
+    #mobile
+    {
+        display: block;
+    }
+
+
+    /** recherche**/
+
+    #btn_rechercher
+    {
+        display: none;
+    }
+    #icon_loupe
+    {
+        color: white;
+        background-color: #0065FC;
+        border-radius: 10px;
+        display:inline;
+        cursor: pointer;
+        height: 33px;
+        width: 40px;
+        
+    
+    }
+    #txt_recherche
+    {
+        border: none;
+    }
+    #icon_recherche
+    {
+        border: none;
+    }
+    #recherche
+    {
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+    #description2
+    {
+        margin-top: 10px;
+    }
+    #filtre
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .filtre1:nth-child(1)
+    {
+        margin-left: 0;
+    }
+     h3 
+    {
+    display: table-header-group; 
+    padding-right: 2em;   
+    }
+    .filtre1
+    {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 7px 11px 0;
+    }
+    .populaire
+    {
+        width:auto;
+        margin: 0;
+    }
+    .cube_populaire
+    {
+        margin: 10px 0;
+    }
+
+    .flex-around
+    {
+     flex-direction: column-reverse;
+    }
+    .Hebergement_marseille
+    {
+        margin-top: 10px;
+        width: 100%;
+        margin-left: 0px;
+        margin-left: 0px;
+        background:white ;
+        padding: 0;
+    }
+    .part1
+    {
+        display: flex;
+        flex-direction: column;
+        background: white;
+    }
+    .part1 a
+{
+    margin-bottom: 30px;
+    width: auto;
+    box-shadow: rgba(163, 160, 160, 0.746) 0px 0px 7px;
+}
+    .part2
+    {
+        display: flex;
+        flex-direction: column;
+        background: white;
+    }
+    .part2 a
+    {
+        margin-bottom: 30px;
+        width: auto;
+        box-shadow: rgba(163, 160, 160, 0.746) 0px 0px 7px;
+    }
+    .activites_marseille
+    {
+        display: block;
+        height: auto;
+        width: auto;
+    }
+    .double_bloc
+    {
+        width: auto;
+        height: 367px;
+        justify-content: center;
+        margin: 0 30px 55px 30px;
+
+    }
+    .bloc
+    {
+        width: auto;
+        height: 367px;
+        margin: 0 30px 55px 30px;
+    }
+    .imgactivite1
+    {
+        width: auto;
+        height: 80%;
+
+    }
+    .imgactivite4
+    {
+        width: auto;
+        height: 80%;
+
+    }
+    footer
+    {
+        flex-direction: column;
+        margin: auto;
+        margin-top: 60px;
+    }
+    .footer
+    {
+        margin-right: 0;
+        padding: 0;
+    }
+    
+}
