@@ -9,17 +9,31 @@ a
 
 /** Header**/
 
-
+/*
 #mobile
 {
     display: none;
-}
+}*/
+
 nav
 {
-    display: flex;
-    justify-content: space-between;
+
     align-items: center;
     text-align: center;
+}
+#bloc1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#bloc2{
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    right: 9%;
+    top: 12px;
 }
 .hebergement
 {
@@ -430,6 +444,7 @@ grâce à l'opérateur '~' et on les force en GRIS
     box-shadow: rgba(163, 160, 160, 0.746) 0px 0px 7px;
     border-radius: 20px;
     margin-left: 20px;
+
 }
 
 .double_bloc
@@ -681,7 +696,11 @@ footer
     {
         display: block;
     }
-
+    #bloc2{
+        position:relative;
+        left: 0%;
+    }
+   
 
     /** recherche**/
 
