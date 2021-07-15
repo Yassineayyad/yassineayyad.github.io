@@ -1,0 +1,14 @@
+%nouveau {
+    content: "Nouveau";
+    font-family: $font-txt;
+    font-weight: bold;
+    font-size: 0.9em;
+    
+    color: darken($color: $cd-tertiaire, $amount: 35);
+    background-color: $cd-tertiaire;
+    width: 80px;
+    padding: 5px;
+    position: absolute;
+    left: 34%;
+    bottom: 4%;
+}

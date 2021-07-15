@@ -1,0 +1,506 @@
+@import './scss/variables.scss';
+@import './scss/mixing';
+@import './scss/animation';
+@import './scss/placeholder';
+
+
+body{
+    font-family: $font-txt;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+    
+}
+.logo {
+    width: 150px;
+    margin-top: 15px;
+
+}
+article{
+    animation: carte 2000ms 200ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 30px;
+
+}
+
+.localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $bg-color-secondaire;
+    border-top: solid darken($color: $bg-color-secondaire, $amount: 10);
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+  
+    &__icon{
+        margin-right: 20px;
+    }
+    &__lieu {
+        font-weight: bold;
+    }
+}
+.reservation{
+    height: 290px;
+    background: $bg-color-tertiaire;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__titre{
+        margin: 0;
+        font-size: 1.5em;
+        font-weight: bolder;
+        width:227px ;
+    }
+    &__description {
+        font-weight: 350;
+        font-size: 1em;
+        width:300px ;
+    }
+    &__btn {
+        cursor: pointer;
+        font-size: 1em;
+        margin-top: 20px;
+        width: 220px;
+        height: 50px;
+        background: radial-gradient(ellipse farthest-corner at 20px 0, $cd-secondaire 0%, $cd-primaire 100%);
+        border-radius: 30px;
+        border: none;
+        color: white;
+        box-shadow: 0px 1px 10px  gray ;
+        transform: scale(1);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        transition-duration: .25s;
+
+        &:hover{
+            transform: scale(.9);
+            box-shadow: 0px 1px 20px gray;
+            transition: all 150ms cubic-bezier(0, 0.28, 0.95, 0.68);
+            
+        }
+
+    }
+}
+.fonction{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px  0;
+    
+    &__titre {
+        font-size: 1.5em;
+    }
+    &__btn {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 70px;
+        width: 320px;
+        font-size: 1em;
+        font-weight: 600;
+        margin: 10px 0;
+        border-radius: 20px;
+        border: none;
+        
+        
+        &--numb {
+            width: 0;
+            height: 0;
+            border: 10px solid $cd-primaire ;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: -53px;
+            right: 6px;
+        }
+
+        &:hover{
+            background: #9356DC60;
+            i{
+                color: $cd-primaire;
+            }
+        }
+       
+    }
+
+
+}
+.resto {
+    background: $bg-color-secondaire;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    h1{
+        padding-top: 70px;
+        position: relative;
+        right:95px;
+        font-size: 1.5em;
+        font-weight: bolder;
+        font-family: $font-txt;
+        height: auto;
+        
+    }
+    }  
+h2 {
+    font-size: 1em;
+    width: 150px;
+    margin: 5px 0 5px 5px ;
+} 
+.restau {
+    width: 335px;
+    height: 250px;
+    margin:  25px auto ;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px gray;
+    border: none;
+    transform: scale(1);
+    a{
+        text-decoration: none;
+        color: black;
+        &:visited{
+            color: black;
+            text-decoration: none;
+        }
+    }
+
+    &__img {    
+        
+        &--1 {
+            background: url(./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+            @include images;
+        
+        }
+        &--2 {
+            background: url(./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+            @include images;
+        }
+        &--3 {
+            background: url(./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+            @include images;
+        }
+        &--4 {
+            background: url(./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+            @include images ;
+        }
+     
+    }
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: start;
+        padding: 8px 0 0 12px;
+        &--title{
+            margin-top: 15px 0 0 0 ;
+            font-weight: bolder;
+        }
+        &--txt {
+            padding-left: 5px;
+            font-weight: normal;
+        }
+
+    }
+    &__icon {
+        font-size: 1.2em;
+        position: relative ;
+        left: 275px;
+        bottom: 30px;
+        color: gray;
+        width: 50px;
+        .fas{
+            display: none;
+        }
+        &:hover{
+            @include like
+        }
+        
+     
+    }  
+    &:hover{
+        transform: scale(1.1);
+        transition: all 400ms ease-in-out;
+    }
+}
+
+
+.footer{
+    background-color:#353535 ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 40px;
+    width: auto;
+    
+    &__title{
+        
+        font-family: $font-titre;
+        text-align: start;
+        a{    
+            color: white;
+            margin-left: 40px;
+            font-size: 1.3em;
+            font-style: italic;
+        }
+    }
+    &__liste{
+
+        li{
+            color: white;
+            text-align: start;
+            margin: 5px 0;
+            display: flex;
+            a{
+                color: white;
+                display: flex;
+                align-items: center;
+                p{
+                    position: absolute;
+                    left: 72px;
+
+                }
+            }
+        }
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+}
+/* **************************************pagerestau********************************** */
+.header{
+
+    margin-top: 10px;
+    &__btn{
+        margin-left:10px;
+        position: absolute;
+        left: 30px;
+        top: 25px;
+        font-size: 1.2em;
+
+
+    }
+    &__icon{
+        align-items: center;
+        text-align: center;
+    }
+}
+.img{
+    background: url(./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    @include img-resto;
+}
+.img1{
+    background: url(./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    @include img-resto;
+}
+.img2{
+    background: url(./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    @include img-resto;
+}
+.img3{
+    background: url(./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    @include img-resto;
+}
+.titre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 50px;
+    font-family: $font-titre;
+    font-size: 1.1em;
+    text-align: start;
+    white-space: nowrap;
+    &__icon{
+        color: gray;
+        .fas{
+            display: none;
+        }
+        &:hover{
+        @include like
+        }
+    }
+}
+.border{
+    border-radius: 45px 45px 0 0 ;
+    background-color: $bg-color-secondaire;
+    z-index: 1;
+    margin-top: -50px;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    &__title{
+        color: darken($color: $bg-color-secondaire , $amount: 35);
+        text-align: start;
+        margin: 10px 20px 3px 10px;
+    
+    }
+    &__anim {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        width: 330px;
+        background-color: white;
+        margin: 20px auto ;
+        border-radius: 15px;
+        cursor: pointer;
+        padding-right: -10px;
+        overflow: hidden;
+        &:hover &--icon{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 76px;
+                transform: scale(1) 50% 0;
+                transition: 600ms ease-in-out;
+                i{
+                    transform: rotate(360deg);
+                    opacity: 1;
+                    transition: 600ms ease-in-out;
+                }
+            }
+        &:hover &--type{
+            h4{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                
+            }
+            p{
+                white-space: nowrap; 
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+          
+        &--type {
+            padding-left: 5px;
+            width: 203px;
+            text-align: start;
+
+            h4{
+                font-size: 1em;
+                margin: 10px 0 5px 8px;
+                white-space: nowrap;
+                
+                
+            }
+            p{
+                font-size: 0.8em;
+                margin: 5px 0px 10px 7px;
+                white-space: wrap; 
+                margin-right: -10px;
+            }
+        }
+        &--price{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            text-align: flex-end;
+            padding-right: 6px;
+            margin-right: -10px;
+            margin-top: 31px;
+
+        }
+        &--icon{
+            width: 0;
+            height: 62px;
+            text-align: center;
+            background-color: $cd-tertiaire;
+            color: white;
+            border-radius: 0 15px 15px 0;
+            transform: scale(1);
+        }
+    }
+    
+}
+.sous-titre {
+    width:40px;
+    height: 4px;
+    background-color: $cd-tertiaire;
+    position: relative;
+    left: 11px;
+}
+/* *****************************************************chargement******************************************* */
+
+
+
+.chargement{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.90);
+    animation: loader 0.1s;
+    animation-delay: 1.75s;
+    animation-fill-mode: both;
+    z-index: 10000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+.lettre{
+    color: $cd-secondaire;
+    font-size: 25px;
+    letter-spacing: 15px;
+    font-family: $font-titre;
+    animation: flash 1.2s linear infinite;
+    &:nth-child(1){
+        animation-delay: 0.1s
+    }
+    &:nth-child(2){
+        animation-delay: 0.2s
+    }
+    &:nth-child(3){
+        animation-delay: 0.3s
+    }
+    &:nth-child(4){
+        animation-delay: 0.4s
+    }
+    &:nth-child(5){
+        animation-delay: 0.5s
+    }
+    &:nth-child(6){
+        animation-delay: 0.6s
+    }
+    &:nth-child(7){
+        animation-delay: 0.7s
+    }
+    &:nth-child(8){
+        animation-delay: 0.8s
+    }
+    &:nth-child(9){
+        animation-delay: 0.9s
+    }
+    &:nth-child(10){
+        animation-delay: 1s
+    }
+}
