@@ -1,0 +1,587 @@
+/* ********** couleur ********* */
+/* **************font************ */
+/* ****************bg color*************** */
+@keyframes carte {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
+  }
+  90% {
+    color: #FF79DA;
+    text-shadow: none;
+  }
+  100% {
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
+  }
+}
+@keyframes loader {
+  0% {
+    z-index: 10000;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  width: 150px;
+  margin-top: 15px;
+}
+
+article {
+  animation: carte 2000ms 200ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaeaea;
+  border-top: solid #d1d1d1;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+}
+.localisation__icon {
+  margin-right: 20px;
+}
+.localisation__lieu {
+  font-weight: bold;
+}
+
+.reservation {
+  height: 290px;
+  background: #f6f6f6;
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reservation__titre {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bolder;
+  width: 227px;
+}
+.reservation__description {
+  font-weight: 350;
+  font-size: 1em;
+  width: 300px;
+}
+.reservation__btn {
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+  width: 220px;
+  height: 50px;
+  background: radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
+  border-radius: 30px;
+  border: none;
+  color: white;
+  box-shadow: 0px 1px 10px gray;
+  transform: scale(1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition-duration: 0.25s;
+}
+.reservation__btn:hover {
+  transform: scale(0.9);
+  box-shadow: 0px 1px 20px gray;
+  transition: all 150ms cubic-bezier(0, 0.28, 0.95, 0.68);
+}
+
+.fonction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+.fonction__titre {
+  font-size: 1.5em;
+}
+.fonction__btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70px;
+  width: 320px;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 10px 0;
+  border-radius: 20px;
+  border: none;
+}
+.fonction__btn--numb {
+  width: 0;
+  height: 0;
+  border: 10px solid #9356DC;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -53px;
+  right: 6px;
+}
+.fonction__btn:hover {
+  background: #9356DC60;
+}
+.fonction__btn:hover i {
+  color: #9356DC;
+}
+
+.resto {
+  background: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.resto h1 {
+  padding-top: 70px;
+  position: relative;
+  right: 95px;
+  font-size: 1.5em;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  height: auto;
+}
+
+h2 {
+  font-size: 1em;
+  width: 150px;
+  margin: 5px 0 5px 5px;
+}
+
+.restau {
+  width: 335px;
+  height: 250px;
+  margin: 25px auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px gray;
+  border: none;
+  transform: scale(1);
+}
+.restau a {
+  text-decoration: none;
+  color: black;
+}
+.restau a:visited {
+  color: black;
+  text-decoration: none;
+}
+.restau__img--1 {
+  background: url(./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  width: 100% s;
+  height: 175px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restau__img--1 span {
+  background: #99E2D0;
+  color: #1b6150;
+  font-weight: bold;
+  font-size: 0.9em;
+  position: relative;
+  left: 118px;
+  top: 20px;
+  padding: 5px;
+}
+.restau__img--2 {
+  background: url(./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  width: 100% s;
+  height: 175px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restau__img--2 span {
+  background: #99E2D0;
+  color: #1b6150;
+  font-weight: bold;
+  font-size: 0.9em;
+  position: relative;
+  left: 118px;
+  top: 20px;
+  padding: 5px;
+}
+.restau__img--3 {
+  background: url(./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  width: 100% s;
+  height: 175px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restau__img--3 span {
+  background: #99E2D0;
+  color: #1b6150;
+  font-weight: bold;
+  font-size: 0.9em;
+  position: relative;
+  left: 118px;
+  top: 20px;
+  padding: 5px;
+}
+.restau__img--4 {
+  background: url(./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  width: 100% s;
+  height: 175px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restau__img--4 span {
+  background: #99E2D0;
+  color: #1b6150;
+  font-weight: bold;
+  font-size: 0.9em;
+  position: relative;
+  left: 118px;
+  top: 20px;
+  padding: 5px;
+}
+.restau__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  padding: 8px 0 0 12px;
+}
+.restau__description--title {
+  margin-top: 15px 0 0 0;
+  font-weight: bolder;
+}
+.restau__description--txt {
+  padding-left: 5px;
+  font-weight: normal;
+}
+.restau__icon {
+  font-size: 1.2em;
+  position: relative;
+  left: 275px;
+  bottom: 30px;
+  color: gray;
+  width: 50px;
+}
+.restau__icon .fas {
+  display: none;
+}
+.restau__icon:hover {
+  color: #9356DC;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.restau__icon:hover .far {
+  display: none;
+}
+.restau__icon:hover .fas {
+  display: block;
+}
+.restau:hover {
+  transform: scale(1.1);
+  transition: all 400ms ease-in-out;
+}
+
+.footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 40px;
+  width: auto;
+}
+.footer__title {
+  font-family: "Shrikhand";
+  text-align: start;
+}
+.footer__title a {
+  color: white;
+  margin-left: 40px;
+  font-size: 1.3em;
+  font-style: italic;
+}
+.footer__liste li {
+  color: white;
+  text-align: start;
+  margin: 5px 0;
+}
+.footer__liste li a {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.footer__liste li a p {
+  position: absolute;
+  left: 72px;
+}
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+/* **************************************pagerestau********************************** */
+.header {
+  margin-top: 10px;
+}
+.header__btn {
+  margin-left: 10px;
+  position: absolute;
+  left: 30px;
+  top: 25px;
+  font-size: 1.2em;
+}
+.header__icon {
+  align-items: center;
+  text-align: center;
+}
+
+.img {
+  background: url(./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  width: 100%;
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+}
+
+.img1 {
+  background: url(./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  width: 100%;
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+}
+
+.img2 {
+  background: url(./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  width: 100%;
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+}
+
+.img3 {
+  background: url(./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  width: 100%;
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+}
+
+.titre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 50px;
+  font-family: "Shrikhand";
+  font-size: 1.1em;
+  text-align: start;
+  white-space: nowrap;
+}
+.titre__icon {
+  color: gray;
+}
+.titre__icon .fas {
+  display: none;
+}
+.titre__icon:hover {
+  color: #9356DC;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.titre__icon:hover .far {
+  display: none;
+}
+.titre__icon:hover .fas {
+  display: block;
+}
+
+.border {
+  border-radius: 45px 45px 0 0;
+  background-color: #eaeaea;
+  z-index: 1;
+  margin-top: -50px;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu__title {
+  color: #919191;
+  text-align: start;
+  margin: 10px 20px 3px 10px;
+}
+.menu__anim {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  width: 330px;
+  background-color: white;
+  margin: 20px auto;
+  border-radius: 15px;
+  cursor: pointer;
+  padding-right: -10px;
+  overflow: hidden;
+}
+.menu__anim:hover .menu__anim--icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 76px;
+  transform: scale(1) 50% 0;
+  transition: 600ms ease-in-out;
+}
+.menu__anim:hover .menu__anim--icon i {
+  transform: rotate(360deg);
+  opacity: 1;
+  transition: 600ms ease-in-out;
+}
+.menu__anim:hover .menu__anim--type h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__anim:hover .menu__anim--type p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__anim--type {
+  padding-left: 5px;
+  width: 203px;
+  text-align: start;
+}
+.menu__anim--type h4 {
+  font-size: 1em;
+  margin: 10px 0 5px 8px;
+  white-space: nowrap;
+}
+.menu__anim--type p {
+  font-size: 0.8em;
+  margin: 5px 0px 10px 7px;
+  white-space: wrap;
+  margin-right: -10px;
+}
+.menu__anim--price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: flex-end;
+  padding-right: 6px;
+  margin-right: -10px;
+  margin-top: 31px;
+}
+.menu__anim--icon {
+  width: 0;
+  height: 62px;
+  text-align: center;
+  background-color: #99E2D0;
+  color: white;
+  border-radius: 0 15px 15px 0;
+  transform: scale(1);
+}
+
+.sous-titre {
+  width: 40px;
+  height: 4px;
+  background-color: #99E2D0;
+  position: relative;
+  left: 11px;
+}
+
+/* *****************************************************chargement******************************************* */
+.chargement {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: loader 0.1s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lettre {
+  color: #FF79DA;
+  font-size: 25px;
+  letter-spacing: 15px;
+  font-family: "Shrikhand";
+  animation: flash 1.2s linear infinite;
+}
+.lettre:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.lettre:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.lettre:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.lettre:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.lettre:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.lettre:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.lettre:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.lettre:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.lettre:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.lettre:nth-child(10) {
+  animation-delay: 1s;
+}
+
+/*# sourceMappingURL=style.css.map */

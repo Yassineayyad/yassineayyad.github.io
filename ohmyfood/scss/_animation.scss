@@ -1,0 +1,38 @@
+@keyframes carte 
+{
+    0% 
+    {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% 
+    {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes flash {
+    0%{
+        color: $cd-primaire;
+        text-shadow: 0 0 7px $cd-primaire;
+    }
+    90%{
+        color: $cd-secondaire;
+        text-shadow: none;
+    }
+    100% {
+        color: $cd-primaire;
+        text-shadow: 0 0 7px $cd-primaire;
+    }
+}
+@keyframes loader {
+   0%{
+       z-index: 10000;
+       opacity: 1;
+   }
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+}
